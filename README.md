@@ -15,11 +15,14 @@ This repository contains **Data Structures and Algorithms (DSA) solutions** cate
    ```bash
    git clone https://github.com/sangam151/DSA-Solutions.git
 2.Navigate to any topic and open the .cpp files to see the solutions.
+<br>
 3.Compile and run C++ files using:
 g++ filename.cpp -o output  
 ./output  
+<br>
 💡 Contributing
 If you have optimized solutions or additional problems, feel free to fork this repo and submit a pull request!
+<br>
 Contact
 For any queries, reach out at sangampoudel560@gmail.com
 
