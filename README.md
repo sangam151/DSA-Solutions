@@ -20,7 +20,7 @@ This repository contains **Data Structures and Algorithms (DSA) solutions** cate
 g++ filename.cpp -o output  
 ./output  
 <br>
-💡 Contributing
+💡 Contributing<br>
 If you have optimized solutions or additional problems, feel free to fork this repo and submit a pull request!
 <br>
 Contact
