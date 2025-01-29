@@ -13,7 +13,7 @@ This repository contains **Data Structures and Algorithms (DSA) solutions** cate
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/sangam151/DSA-Solutions.git
 2.Navigate to any topic and open the .cpp files to see the solutions.
 3.Compile and run C++ files using:
 g++ filename.cpp -o output  
