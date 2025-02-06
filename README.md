@@ -7,7 +7,8 @@ This repository contains **Data Structures and Algorithms (DSA) solutions** cate
 - **BASIC HASHING** - Problems related to hashing techniques  
 - **SORTING** - Sorting algorithms like Quick Sort, Merge Sort, Bubble Sort, etc.  
 - **RECURSION** - Recursive approach to problem-solving  
-- **LOGICAL THINKING** - Problems that improve problem-solving skills  
+- **LOGICAL THINKING** - Problems that improve problem-solving skills
+- **PROBLEMS ON ARRAY** -  Array-related problems covering various techniques and algorithms  
 
 ## 🔧 **How to Use**  
 
