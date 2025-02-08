@@ -1,4 +1,4 @@
-//Largest element of the array
+//Largest element of the array by sorting techinique
 #include<bits/stdc++.h>
 using namespace std;
 void largest_element(int arr[],int n)
@@ -15,7 +15,7 @@ void largest_element(int arr[],int n)
             }
         }
     }
-    cout<<"Largest Element of the array is"<<arr[n-1];
+    cout<<"Largest Element of the array is "<<arr[n-1];
 }
 int main(){
    int arr[]={1,2,3,4,5};
