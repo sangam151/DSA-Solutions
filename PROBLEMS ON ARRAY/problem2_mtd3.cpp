@@ -1,3 +1,4 @@
+// second largest element of the array without using sorting (BETTER APPROACH)
 #include<bits/stdc++.h>
 using namespace std;
 int second_largest(int arr[],int n)
