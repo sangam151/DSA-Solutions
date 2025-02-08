@@ -1,3 +1,4 @@
+//removing duplicate element of the array by using optimal solution
 #include<bits/stdc++.h>
 using namespace std;
 int remove_duplicate(int arr[],int n)
