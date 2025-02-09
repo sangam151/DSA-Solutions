@@ -1,24 +1,24 @@
-//Union of two array by using map
+//union of two array by using set
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> FindUnion(int arr1[],int arr2[],int n,int m)
 {
-    map<int,int> freq;
     vector<int> Union;
+    set<int> s;
     for(int i=0;i<n;i++)
     {
-        freq[arr1[i]]++;
+        s.insert(arr1[i]);
     }
     for(int i=0;i<m;i++)
     {
-        freq[arr2[i]]++;
+        s.insert(arr2[i]);
     }
-    for(auto & it:freq)
+    for(auto &it:s)
     {
-        Union.push_back(it.first);
+        Union.push_back(it);
+
     }
     return Union;
-
 }
 int main(){
         int arr1[]={1,2,3,4,5,6,7,8,9,10};
