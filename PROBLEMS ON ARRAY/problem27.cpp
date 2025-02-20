@@ -1,4 +1,4 @@
-//count subarrays sum equals K
+//count subarrays sum equals K.
 #include<bits/stdc++.h>
 using namespace std;
 int findAllSubarrays(vector<int> arr,int k)
