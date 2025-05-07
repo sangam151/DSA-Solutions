@@ -1,4 +1,4 @@
-//Find the number that appears once, and the other numbers twice by using Better approach 1(hashing)
+//Find the number that appears once, and the other numbers twice by using Better approach 1(array hashing)
 #include<bits/stdc++.h>
 using namespace std;
 int getSingleElement(vector<int> arr)

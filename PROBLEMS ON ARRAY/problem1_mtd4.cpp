@@ -3,6 +3,7 @@ using namespace std;
 
 int getMaxElement(vector<int>& arr) {
     return *max_element(arr.begin(), arr.end()); // O(N) complexity
+    //Here max_element return iterator pointing to largest element of the array
 }
 
 int main() {

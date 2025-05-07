@@ -1,4 +1,4 @@
-//rotate the array by k places by using temp array
+//rotate the array right by k places by using temp array
 #include<bits/stdc++.h>
 using namespace std;
 void RotateToRight(int arr[],int n,int k)

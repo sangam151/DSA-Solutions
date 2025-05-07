@@ -1,3 +1,4 @@
+//longest consecutive sequence in the array by brute force approach
 #include<bits/stdc++.h>
 using namespace std;
 bool linearSearch(vector<int>&a,int num)

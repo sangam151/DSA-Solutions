@@ -18,7 +18,7 @@ vector<int> Rearrangebysign(vector<int> arr,int n)
         negIndex+=2;
         }
     }
-    return ans;
+    return ans; 
 }
 int main()
 {

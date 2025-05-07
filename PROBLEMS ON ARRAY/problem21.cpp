@@ -35,7 +35,7 @@ class Solution
                 int nextindex=(i+1)%result.size();
                 cout<<"next permutation"<<endl;
                 for(int it:result[nextindex])
-                {
+                {   
                     cout<<it<<" ";
                 }
             }

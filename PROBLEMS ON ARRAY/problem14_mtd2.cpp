@@ -20,7 +20,7 @@ int getLongestArray(vector<int> arr,long long k)
 }
 int main(){
     vector<int> arr={2,3,5,1,9};
-    long long k=10;
+    long long k=10;     
     int len=getLongestArray(arr,k);
     cout<<"The length of longest subarray is "<<len<<endl;
     return 0;

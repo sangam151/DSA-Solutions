@@ -22,7 +22,7 @@ vector<int> printspiral(vector<vector<int>> mat)
             
         }
         right--;
-        if(top<=buttom)
+        if(left<=right)
         {
         for(int i=right;i>=left;i--)
         {
@@ -31,7 +31,7 @@ vector<int> printspiral(vector<vector<int>> mat)
         }
         buttom--;}
         //for moving buttom to top
-        if(left<=right)
+        if(top<=buttom)
         {
             for(int i=buttom;i>=top;i--)
             spiral.push_back(mat[i][left]);

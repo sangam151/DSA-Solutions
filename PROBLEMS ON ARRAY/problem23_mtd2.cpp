@@ -19,7 +19,7 @@ int longestConsecutiveSequence(vector<int> arr)
             cnt+=1;
             lastsmaller=arr[i];
         }
-        else 
+        else if(arr[i]!=lastsmaller)
         {
             cnt=1;
             lastsmaller=arr[i];

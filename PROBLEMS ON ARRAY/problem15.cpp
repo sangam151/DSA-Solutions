@@ -17,7 +17,7 @@ int main(){
     vector<int> arr={2,6,5,8,11};
     int target=14;
     string ans=twoSum(arr,n,target);
-    cout<<"this is the answer for varient 1"<<ans<<endl;
+    cout<<"this is the answer for varient 1 "<<ans<<endl;
 
     return 0;
 }
