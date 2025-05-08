@@ -1,4 +1,4 @@
- //Binary search to find X in the sorted array iterative implementation
+ //Binary search to find X in the sorted array recursive implementation
  #include<bits/stdc++.h>
  using namespace std;
  int binarysearch(vector<int> a,int target,int low,int high)
