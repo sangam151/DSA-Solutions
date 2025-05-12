@@ -1,4 +1,4 @@
-//Find out how many times the array has been rotated by brute force approach
+//Find out how many times the array has been rotated by optimal approach
 #include <bits/stdc++.h>
 using namespace std;
 int minSorted(vector<int> &arr)
