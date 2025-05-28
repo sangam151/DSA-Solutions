@@ -1,46 +1,34 @@
 #include<bits/stdc++.h>
 using namespace std;
-int lowBound(vector<int> arr,int n,int x)
+bool binarySearch(vector<int> & nums,int target )
 {
+    int n=nums.size();
     int low=0,high=n-1;
-    int ans=n;
     while(low<=high)
     {
         int mid=(low+high)/2;
-        if(arr[mid]>=x)
-        {
-            ans=mid;
-            high=mid-1;
-        }
+        if(nums[mid]==target) return true;
+        else if(target>nums[mid]) low=mid+1;
         else
-        {
-            low=mid+1;
-        }
-
+        high=mid-1;
     }
-    return ans;
+    return false;
 }
-int rowWithMax1s(vector<vector<int>> matrix, int n,int m)
+bool searchMatrix(vector<vector<int>> & matrix,int target)
 {
-    int cnt_max=0;
-    int index=-1;
-    //transverse the rows
+    int n=matrix.size();
+    int m=matrix[0].size();
     for(int i=0;i<n;i++)
     {
-        //get the number of 1s
-        int cnt_ones=m-lowBound(matrix[i],m,1);
-        if(cnt_ones>cnt_max)
+        if(matrix[i][0]<=target && target<=matrix[i][m-1])
         {
-            cnt_max=cnt_ones;
-            index=i;
+            return binarySearch(matrix[i],target);
         }
     }
-    return index;
+    return false;
 }
 int main()
 {
-    vector<vector<int>> matrix={{1,1,1},{0,0,1},{0,0,0}};
-    int n=3,m=3;
-    cout<<"The row with maximum number of one's is: "<<rowWithMax1s(matrix,n,m)<<endl;
-
+    vector<vector<int>> matrix={{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+    searchMatrix(matrix,8)==true?cout<<"True"<<endl: cout<<"false"<<endl;
 }
