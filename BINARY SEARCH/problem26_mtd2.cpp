@@ -1,3 +1,4 @@
+//search in a 2D matrix by optimal appraoch
 #include<bits/stdc++.h>
 using namespace std;
 bool searchMatrix(vector<vector<int>> & matrix,int target)

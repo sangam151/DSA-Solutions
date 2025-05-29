@@ -1,4 +1,4 @@
-//search in a 2D matrix by better approach
+//by better approach (using binary search algorithm)
 #include<bits/stdc++.h>
 using namespace std;
 bool binarySearch(vector<int> & nums,int target )
@@ -21,10 +21,8 @@ bool searchMatrix(vector<vector<int>> & matrix,int target)
     int m=matrix[0].size();
     for(int i=0;i<n;i++)
     {
-        if(matrix[i][0]<=target && target<=matrix[i][m-1])
-        {
-            return binarySearch(matrix[i],target);
-        }
+        bool flag=binarySearch(matrix[i],target);
+        if(flag) return true;
     }
     return false;
 }
