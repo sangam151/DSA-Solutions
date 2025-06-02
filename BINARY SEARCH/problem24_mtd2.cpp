@@ -52,9 +52,9 @@ double median(vector<int> a, vector<int> b)
         j++;
     }
     // find the median
-    if(n%2==1)
-    return (double)ind2el;
-    return (double)((double)(ind1el+ind2el))/2.0;
+    if (n % 2 == 1)
+        return (double)ind2el;
+    return (double)((double)(ind1el + ind2el)) / 2.0;
 }
 int main()
 {

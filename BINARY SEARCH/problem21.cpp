@@ -43,6 +43,6 @@ int main()
     vector<int> arr = {10,20,30,40};
     int k = 2; // number of student
     int ans = largestSubarraySumMinimized(arr, k);
-    cout << "Maximum number of pages assigned to a student is minimum is: " << ans << endl;
+    cout << "The answer is: " << ans << endl;
     return 0;
 }  
