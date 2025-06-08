@@ -1,4 +1,4 @@
-// detect graph in undirected graph using dfs transval technique
+// detect cycle in undirected graph using dfs transval technique
 #include <bits/stdc++.h>
 using namespace std;
 class Solution
