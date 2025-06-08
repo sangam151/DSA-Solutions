@@ -1,4 +1,4 @@
-// detect graph in undirected graph
+// detect graph in undirected graph using bfs transval technique
 #include <bits/stdc++.h>
 using namespace std;
 class Solution
