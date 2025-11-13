@@ -1,4 +1,4 @@
-//Find the middle Element of the Linked List by brute force approach
+//Find the middle Element of the Linked List by optimal approach
 #include <bits/stdc++.h>
 using namespace std;
 class Node
@@ -37,26 +37,19 @@ Node *convertArr2LL(vector<int> &arr)
 }
 int middleElement(Node* head)
 {
-    if(head==NULL ||head->next==NULL)
+    if(head==NULL && head->next==NULL)
     {
         return head->data;
     }
-    Node* temp=head;
-    int cnt=0;
-    while(temp!=NULL)
+    Node* slow=head;
+    Node* fast=head;
+    while(fast!=NULL && fast->next!=NULL)
     {
-        cnt++;
-        temp=temp->next;
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+    return slow->data;
 
-    }
-    temp=head;
-    int cnt1=0;
-    while(temp!=NULL)
-    {
-        cnt1++;
-        if((cnt/2)+1==cnt1) return temp->data;
-        temp=temp->next;
-    }
 }
 int main()
 {
