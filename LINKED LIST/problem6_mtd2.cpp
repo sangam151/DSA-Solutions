@@ -1,4 +1,4 @@
-// Reverse a Linked List by optimal approach 1
+// Reverse a Linked List by optimal approach 2
 #include <bits/stdc++.h>
 using namespace std;
 class Node
