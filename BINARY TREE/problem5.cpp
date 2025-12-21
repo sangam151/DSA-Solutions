@@ -1,4 +1,4 @@
-// PreOrder Transversal in Binary Tree
+// PreOrder Transversal in Binary Tree using iterative approach
 #include <bits/stdc++.h>
 using namespace std;
 // Node Structure for the binary tree
