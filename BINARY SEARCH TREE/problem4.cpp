@@ -16,7 +16,7 @@ struct TreeNode
 class Solution
 {
 public:
-    int ceilInBST(TreeNode *root, int key)
+    int floorInBST(TreeNode *root, int key)
     {
         int floor = -1;
         while (root)
@@ -35,8 +35,8 @@ public:
             {
                 root = root->left;
             }
-            return floor;
         }
+        return floor;
     }
 };
 int main()
@@ -47,10 +47,10 @@ int main()
     root->left->left = new TreeNode(1);
     root->left->right = new TreeNode(3);
     Solution obj;
-    int ceil = obj.ceilInBST(root, 5);
-    if (ceil != -1)
+    int floor = obj.floorInBST(root, 5);
+    if (floor != -1)
     {
-        cout << "Ceil of key is: " << ceil << endl;
+        cout << "Floor of key is: " << floor << endl;
     }
     else
     {
