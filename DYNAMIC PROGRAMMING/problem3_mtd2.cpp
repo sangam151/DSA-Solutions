@@ -16,7 +16,7 @@ public:
             int jumpOne = dp[ind - 1] + abs(height[ind] - height[ind - 1]);
             int jumpTwo = INT_MAX;
             if (ind > 1)
-                jumpTwo = dp[ind - 2] + abs(height[ind] - height[ind - 1]);
+                jumpTwo = dp[ind - 2] + abs(height[ind] - height[ind - 2]);
             dp[ind] = min(jumpOne, jumpTwo);
         }
         return dp[n - 1];
