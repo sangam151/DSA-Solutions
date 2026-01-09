@@ -20,7 +20,7 @@ public:
             int jumpOne = prev + abs(height[ind] - height[ind - 1]);
             int jumpTwo = INT_MAX;
             if (ind > 1)
-                jumpTwo = prev2 + abs(height[ind] - height[ind - 1]);
+                jumpTwo = prev2 + abs(height[ind] - height[ind - 2]);
             int cur_i = min(jumpOne, jumpTwo);
             prev2 = prev;
             prev = cur_i;
