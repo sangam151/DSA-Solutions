@@ -11,9 +11,10 @@ public:
         if (dp[ind] != -1)
             return dp[ind];
         int Jump2 = INT_MAX;
+
         int Jump1 = solve(ind - 1, height, dp) + abs(height[ind] - height[ind - 1]);
         if (ind > 1)
-            int Jump2 = solve(ind - 2, height, dp) + abs(height[ind] - height[ind - 2]);
+            Jump2 = solve(ind - 2, height, dp) + abs(height[ind] - height[ind - 2]);
         return dp[ind] = min(Jump1, Jump2);
     }
     int frogJump(vector<int> &height)
