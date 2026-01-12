@@ -17,7 +17,7 @@ int f(int day, int last, vector<vector<int>> &points, vector<vector<int>> &dp)
     }
     int maxi = 0;
     for (int i = 0; i <= 2; i++)
-    {
+    {   
         if (i != last)
         {
             int activity = points[day][i] + f(day - 1, i, points, dp);
