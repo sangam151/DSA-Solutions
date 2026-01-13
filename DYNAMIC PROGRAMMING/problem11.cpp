@@ -1,4 +1,4 @@
-// Minimum path sum in traingular grid
+// Minimum path sum in traingular grid by memoization approach
 #include <bits/stdc++.h>
 using namespace std;
 class Solution
@@ -13,7 +13,7 @@ public:
             return traingle[i][j];
         int down = traingle[i][j] + solve(i + 1, j, traingle, n, dp);
         int diag = traingle[i][j] + solve(i + 1, j + 1, traingle, n, dp);
-        return dp[i][j] = min(down, diag);
+        return dp[i][j] = min(down, diag);   
     }
     int minimumPathSum(vector<vector<int>> &traingle)
     {
