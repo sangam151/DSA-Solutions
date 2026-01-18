@@ -18,6 +18,7 @@ public:
         {
             taken = subsetSumUtil(ind - 1, target - arr[ind], arr, dp);
         }
+        return dp[ind][target]=notTaken||taken;
     }
     bool subsetSumToK(int n, int k, vector<int> &arr)
     {

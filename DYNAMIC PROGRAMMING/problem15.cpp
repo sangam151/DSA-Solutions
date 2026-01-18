@@ -15,6 +15,7 @@ bool subsetSumUtil(int ind, int target, vector<int> &arr, vector<vector<int>> &d
     {
         taken = subsetSumUtil(ind - 1, target - arr[ind], arr, dp);
     }
+    return dp[ind][target]=notTaken || taken;
 }
 bool canPartition(int n, vector<int> &arr)
 {
