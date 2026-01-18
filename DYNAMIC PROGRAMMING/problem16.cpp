@@ -1,4 +1,4 @@
-// Partition set into 2 subset with minimum absolute sum difference by memoization approach
+// Partition set into 2 subset with minimum absolute sum difference by memoization approach.
 #include <bits/stdc++.h>
 using namespace std;
 bool subsetSumUtil(int ind, int target, vector<int> &arr, vector<vector<int>> &dp)
@@ -15,6 +15,7 @@ bool subsetSumUtil(int ind, int target, vector<int> &arr, vector<vector<int>> &d
     {
         taken = subsetSumUtil(ind - 1, target - arr[ind], arr, dp);
     }
+    return dp[ind][target]=notTaken||taken;
 }
 int minSubsetSumDifference(vector<int> &arr, int n)
 {
