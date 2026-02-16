@@ -65,7 +65,7 @@ public:
 int main()
 {
     int n = 4;
-    vector<vector<int>> connections = {{0, 1}, {0, 2}, {1, 2}};
+    vector<vector<int>> connections = {{0,1}, {0, 2}, {1, 2}};
     Solution sol;
     cout << sol.makeConnected(n, connections) << endl;
     return 0;
