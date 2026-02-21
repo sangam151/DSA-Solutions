@@ -32,7 +32,7 @@ public:
     {
         Node *dummy = new Node(0, head);
         Node *slow = dummy;
-        Node *fast = dummy;
+        Node *fast =  dummy;
         for (int i = 0; i <= N; i++)
         {
             fast = fast->next;
